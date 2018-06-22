@@ -12,7 +12,7 @@ class DGR_HelloWorld extends ET_Builder_Module {
 	);
 
 	public function init() {
-		$this->name = esc_html__( 'Hello World', 'dgr-divigrid' );
+		$this->name = esc_html__( 'Divi Grid', 'dgr-divigrid' );
 	}
 
 	public function get_fields() {
