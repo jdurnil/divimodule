@@ -12,3 +12,9 @@ foreach ( (array) $module_files as $module_file ) {
 		require_once $module_file;
 	}
 }
+function _enqueue_lightbox() {
+    $dir = plugins_url('/divigrid');
+    wp_enqueue_script('lightbox',$dir.'/includes/js/lightbox.js','jquery');
+    wp_enqueue_style('lightbox_css', $dir.'/includes/css/lightbox.css');
+}
+add_action('wp_enqueue_scripts','_enqueue_lightbox');

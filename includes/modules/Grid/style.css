@@ -1,0 +1,59 @@
+.main {
+    display: grid;
+    grid-auto-flow: dense;
+
+}
+
+.main .item{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.main .text-content{
+    width: 30em  !important;
+    overflow: hidden !important;
+    height: 45% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    overflow-wrap: break-word;
+}
+.box{
+    width: 10%;
+    height: 10%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.box:before
+{
+    visibility: hidden;
+    content: "\55";
+    font-family: 'ETmodules';
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+}
+.item:hover .box:before{
+    z-index: 99;
+    visibility: visible;
+}
+
+.dgr_grid_item > div{
+    height: 100%;
+}
+.main .et_pb_module_inner{
+    height: 100%;
+}
+
+.main .dgr_grid_item{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    grid-column-start: auto;
+    grid-row-start: auto;
+    height: 100%;
+
+}
